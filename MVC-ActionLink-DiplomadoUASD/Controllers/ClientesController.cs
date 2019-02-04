@@ -6,9 +6,20 @@ using System.Web.Mvc;
 
 namespace MVC_ActionLink_DiplomadoUASD.Controllers
 {
-    public class HomeController : Controller
+    public class ClientesController : Controller
     {
+        // GET: Clientes
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Listado()
+        {
+            return View();
+        }
+
+        public ActionResult Crear()
         {
             return View();
         }

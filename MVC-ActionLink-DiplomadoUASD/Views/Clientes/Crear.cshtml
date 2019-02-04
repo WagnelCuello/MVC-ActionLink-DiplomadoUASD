@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Crear";
+}
+
+<div>
+    <h2>Creación de clientes</h2>
+    
+    <form action="~/Controllers/Clientes/Crear" method="post">
+        <table>
+            <tr>
+                <td>Codigo </td>
+                <td></td>
+                <td><input type="text" name="Id" value="" class="form-control" /></td>
+            </tr>
+            <tr><td><br /></td></tr>
+            <tr>
+                <td>Nombre </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" name="Nombre" value="" class="form-control" /></td>
+            </tr>
+            <tr><td><br /></td></tr>
+            <tr>
+                <td>Apellido </td>
+                <td></td>
+                <td><input type="text" name="Apellido" value="" class="form-control" /></td>
+            </tr>
+            <tr><td><br /></td></tr>
+            <tr>
+                <td>Telefono </td>
+                <td></td>
+                <td><input type="tel" name="Telefono" value="" class="form-control" /></td>
+            </tr>
+            <tr><td><br /></td></tr>
+            <tr>
+                <td>Cedula </td>
+                <td></td>
+                <td><input type="text" name="Cedula" value="" class="form-control" /></td>
+            </tr>
+        </table>
+        <br />
+        <input type="submit" class="btn btn-primary" name="Crear" value="Crear" />
+    </form>
+    <hr />
+    @Html.ActionLink("Listado de clientes","Listado")
+    <br />
+    @Html.ActionLink("Regresar a la página principal", "Index", "Home")
+</div>
