@@ -2,7 +2,26 @@
 @{
     ViewBag.Title = "Listado";
 }
+@model IEnumerable<MVC_ActionLink_DiplomadoUASD.Models.ProveedoresModel>
 
 <h2>Listado de Proveedores</h2>
+
+<table class="table">
+    <tr>
+        <th>Codigo</th>
+        <th>Nombre</th>
+        <th>RNC</th>
+        <th>Telefono</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.ProveedorID)</td>
+            <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+            <td>@Html.DisplayFor(modelItem => item.RNC)</td>
+            <td>@Html.DisplayFor(modelItem => item.Telefono)</td>
+        </tr>
+    }
+</table>
 
 @Html.ActionLink("Regresar a la pagina principal", "Index", "Home")

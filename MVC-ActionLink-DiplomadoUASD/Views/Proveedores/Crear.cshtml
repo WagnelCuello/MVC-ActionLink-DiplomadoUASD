@@ -5,7 +5,37 @@
 
 <div>
     <h2>Creación de Proveedores</h2>
-    <p>*****************</p>
+
+    <form action="/Proveedores/Crear" method="post">
+        <table>
+            <tr>
+                <td>Codigo </td>
+                <td></td>
+                <td><input type="text" name="Id" value="" class="form-control" /></td>
+            </tr>
+            <tr><td><br /></td></tr>
+            <tr>
+                <td>Nombre </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" name="Nombre" value="" class="form-control" /></td>
+            </tr>
+            <tr><td><br /></td></tr>
+            <tr>
+                <td>RNC </td>
+                <td></td>
+                <td><input type="text" name="RNC" value="" class="form-control" /></td>
+            </tr>
+            <tr><td><br /></td></tr>
+            <tr>
+                <td>Telefono </td>
+                <td></td>
+                <td><input type="tel" name="Telefono" value="" class="form-control" /></td>
+            </tr>
+        </table>
+        <br />
+        <input type="submit" class="btn btn-primary" name="Crear" value="Crear" />
+    </form>
+    <hr />
     @Html.ActionLink("Listado de proveedores", "Listado")
     <br />
     @Html.ActionLink("Regresar a la página principal", "Index", "Home")
